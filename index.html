@@ -1,13 +1,48 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Play</title>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="stylesheet" href="main.css">
+	<title>Play</title>
 </head>
+
 <body>
-    <video autoplay loop muted>
-        <source src="https://cdn-cf-east.streamable.com/video/mp4/ip9rla.mp4?Expires=1603765200&Signature=Vzg4g-KH3OogRPbUr5q3ZfxseW5pcHVEUHiNGrARaHGYriPjFIvpwoL7JPjLlXn1Vh2x0lGd37ovFznokcFlie0VyvjGTPzqOqpgvgP5iJ5xX7zQycdnMEtBy7uQahtPFfr~uvShW-sY4hFjBDWOz-F~ontZLgcuiV2YNtrURANC5VOYRGmRaI8zD4pvgTbJWIt6jSKkzn0RLitq4VEhtdODmD32JgnzYv9wXDLFE0Y1ec~xwx9Hp5NEl9H8IrZDcZt45R1o99Y5UDWIliC08gZy254ppiaGn5e7b7fGmPhBuRyDd6aDtDr3Ckq4p-6Buw7AhzJLAKkI5gpNZ8Jvpg__&Key-Pair-Id=APKAIEYUVEN4EVB2OKEQ"/>
-    </video>
+	<script src="main.js"></script>
+	<div id ="acts">
+		<div id="card-container">
+			<div class="act-card" onclick="loadAct(0)">
+				<img src="images/Cinderella.png">
+			</div>
+			<div class="act-card" onclick="loadAct(1)">
+				<img src="images/Peanut Butter and Jelly.png">
+			</div>
+			<div class="act-card" onclick="loadAct(2)">
+				<img src="images/Bicycles.png">
+			</div>
+			<div class="act-card" onclick="loadAct(3)">
+				<img src="images/Cleopatra.png">
+			</div>
+			<div class="act-card" onclick="loadAct(4)">
+				<img src="images/Robot Queen.png">
+			</div>
+		</div>
+	</div>
+	<div id="act-details">
+		<div id="navbar">
+			<img src="images/ic_round-menu.png" onclick="hamburger()">
+			<p id="title">Cinderella Bloodsucker</p>
+		</div>
+		<div id="people-card-container">
+			<div class="people-card">
+				<img src="images/0/JANE_DOE.png">
+			</div>
+			<div class="people-card">
+				<img src="images/0/JOHN_DOE.png">
+			</div>
+		</div>
+	</div>
 </body>
+
 </html>
