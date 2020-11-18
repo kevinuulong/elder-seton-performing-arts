@@ -1,5 +1,5 @@
 var cinderella = {"vale.png": "vale", "kent.png": "kent", "hicks.png": "hicks", "chowning.png": "chowning", "jansen.png": "jansen", "becker.png": "becker"},
-    pbj = {},
+    pbj = {"collins.png": "collins", "hickey.png": "hickey", "hughes.png": "hughes", "roll.png": "roll"},
     bicycles = {"sweeney.png": "sweeney", "somers.png": "somers", "becker.png": "becker", "doherty.png": "doherty", "macke.png": "macke"},
     cleopatra = {"espich.png": "espich", "hickey.png": "hickey", "broxterman.png": "broxterman", "barsan.png": "barsan", "jansen.png": "jansen", "meyer.png": "meyer", "saupe.png": "saupe", "newland.png": "newland", "haverbusch.png": "haverbusch"},
     robot = {"macke.png": "macke", "doherty.png": "doherty", "vale.png": "vale", "kent.png": "kent", "gregorio.png": "gregorio", "sweeney.png": "sweeney"},
@@ -22,5 +22,5 @@ function hamburger() {
 }
 
 function openStory(url) {
-    window.location.href += `stories/${url}.html`
+    window.location.href = `/stories/${url}.html`
 }

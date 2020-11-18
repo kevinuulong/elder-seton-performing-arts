@@ -25,6 +25,7 @@ body {
 
 .act-card > img {
     vertical-align: bottom;
+    cursor: pointer;
 }
 
 #act-details {
@@ -43,6 +44,10 @@ body {
 .people-card {
     padding-left: 25px;
     padding-right: 25px;
+}
+
+.people-card > img {
+    cursor: pointer;
 }
 
 #navbar {
