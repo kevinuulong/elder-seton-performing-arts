@@ -3,7 +3,8 @@ var cinderella = {"vale.png": "vale", "kent.png": "kent", "hicks.png": "hicks", 
     bicycles = {"sweeney.png": "sweeney", "somers.png": "somers", "becker.png": "becker", "doherty.png": "doherty", "macke.png": "macke"},
     cleopatra = {"espich.png": "espich", "hickey.png": "hickey", "broxterman.png": "broxterman", "barsan.png": "barsan", "jansen.png": "jansen", "meyer.png": "meyer", "saupe.png": "saupe", "newland.png": "newland", "haverbusch.png": "haverbusch"},
     robot = {"macke.png": "macke", "doherty.png": "doherty", "vale.png": "vale", "kent.png": "kent", "degregorio.png": "degregorio", "sweeney.png": "sweeney"},
-    acts = [cinderella, pbj, bicycles, cleopatra, robot],
+    crew = {"crew.png": "crew"},
+    acts = [cinderella, pbj, bicycles, cleopatra, robot, crew],
     actTitles = ["CINDERELLA BLOODSUCKER", "PEANUT BUTTER AND JELLY", "BICYCLES WITH SQUARE WHEELS", "CLEOPATRA'S TALK SHOW", "ROBOT QUEEN"];
 
 function loadAct(act) {
