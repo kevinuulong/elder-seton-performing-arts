@@ -5,7 +5,7 @@ var cinderella = {"vale.png": "vale", "kent.png": "kent", "hicks.png": "hicks", 
     robot = {"macke.png": "macke", "doherty.png": "doherty", "vale.png": "vale", "kent.png": "kent", "degregorio.png": "degregorio", "sweeney.png": "sweeney"},
     crew = {"crew.png": "crew"},
     acts = [cinderella, pbj, bicycles, cleopatra, robot, crew],
-    actTitles = ["CINDERELLA BLOODSUCKER", "PEANUT BUTTER AND JELLY", "BICYCLES WITH SQUARE WHEELS", "CLEOPATRA'S TALK SHOW", "ROBOT QUEEN"];
+    actTitles = ["CINDERELLA BLOODSUCKER", "PEANUT BUTTER AND JELLY", "BICYCLES WITH SQUARE WHEELS", "CLEOPATRA'S TALK SHOW", "ROBOT QUEEN","STAGE CREW"];
 
 function loadAct(act) {
     document.getElementById("acts").style.display = "none";
