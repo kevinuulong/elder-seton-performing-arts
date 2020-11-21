@@ -28,7 +28,7 @@ function loadAct(act) {
     var imgs = Object.keys(acts[act]),
         stories = Object.values(acts[act]);
     for (i = 0; i < Object.keys(acts[act]).length; i++) {
-        document.getElementById("people-card-container").innerHTML += `<div class="people-card" onclick='openStory("${stories[i]}")'><img src="images/${act}/${imgs[i]}"></div>`
+        document.getElementById("people-card-container").innerHTML += `<div class="people-card" id="story-${stories[act]}" onclick='openStory("${stories[i]}");'><img src="images/${act}/${imgs[i]}"></div>`
     }
 }
 
