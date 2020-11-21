@@ -12,6 +12,7 @@ const actFromUrl = window.location.search,
 window.onload = () => {
     console.log(actId);
     if (actId!=null) loadAct(actId);
+    else history.pushState({}, document.title, window.location.pathname);
 }
 
 window.addEventListener('popstate', () => {
