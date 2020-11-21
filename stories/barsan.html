@@ -76,17 +76,42 @@
     <script async src='https://cdn.ampproject.org/v0.js'></script>
     <script async custom-element='amp-story' src='https://cdn.ampproject.org/v0/amp-story-1.0.js'></script>
     <link href='https://fonts.googleapis.com/css?family=Oswald:200,300,400' rel='stylesheet'>
+    <!-- AMP Analytics -->
     <script async custom-element="amp-analytics" src="https://cdn.ampproject.org/v0/amp-analytics-0.1.js"></script>
+
     <amp-analytics type="gtag" data-credentials="include">
         <script type="application/json">
-            {
-                "vars" : {
-                    "gtag_id": "G-4PFWQ3V949",
-                    "config" : {
-                    "G-4PFWQ3V949": { "groups": "default" }
-                    }
+          {
+            "vars": {
+              "gtag_id": "G-4PFWQ3V949",
+              "config": {
+                "G-4PFWQ3V949": {
+                  "groups": "default"
                 }
+              }
+            },
+            "triggers": {
+              "storyProgress": {
+                "on": "story-page-visible",
+                "vars": {
+                  "event_name": "custom",
+                  "event_action": "story_progress",
+                  "event_category": "${title}",
+                  "event_label": "${storyPageId}",
+                  "send_to": ["G-4PFWQ3V949"]
+                }
+              },
+              "storyEnd": {
+                "on": "story-last-page-visible",
+                "vars": {
+                  "event_name": "custom",
+                  "event_action": "story_complete",
+                  "event_category": "${title}",
+                  "send_to": ["G-4PFWQ3V949"]
+                }
+              }
             }
+          }
         </script>
     </amp-analytics>
     <style amp-custom>
@@ -144,16 +169,42 @@
     </style>
 </head>
 <body>
+    <!-- Google Tag Manager -->
+    <amp-analytics config="https://www.googletagmanager.com/amp.json?id=GTM-5QZWS5H&gtm.url=SOURCE_URL" data-credentials="include"></amp-analytics>
+
     <amp-analytics type="gtag" data-credentials="include">
         <script type="application/json">
-            {
-                "vars" : {
-                    "gtag_id": "G-4PFWQ3V949",
-                    "config" : {
-                    "G-4PFWQ3V949": { "groups": "default" }
-                    }
+          {
+            "vars": {
+              "gtag_id": "G-4PFWQ3V949",
+              "config": {
+                "G-4PFWQ3V949": {
+                  "groups": "default"
                 }
+              }
+            },
+            "triggers": {
+              "storyProgress": {
+                "on": "story-page-visible",
+                "vars": {
+                  "event_name": "custom",
+                  "event_action": "story_progress",
+                  "event_category": "${title}",
+                  "event_label": "${storyPageId}",
+                  "send_to": ["G-4PFWQ3V949"]
+                }
+              },
+              "storyEnd": {
+                "on": "story-last-page-visible",
+                "vars": {
+                  "event_name": "custom",
+                  "event_action": "story_complete",
+                  "event_category": "${title}",
+                  "send_to": ["G-4PFWQ3V949"]
+                }
+              }
             }
+          }
         </script>
     </amp-analytics>
     <amp-story standalone title='Jack Barsan' publisher='Seton Elder Drama Club' publisher-logo-src='../images/logo.jpg'
